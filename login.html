@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+
+</head>
+
+<body>
+	<div class="main">
+		
+		<div class="login">
+			<div class="inset">
+			
+				<form action="logindo.php" method="post">
+			         <div>
+						<span><label>Username</label></span>
+						<span><input type="text" class="textbox" id="active" name="name"></span>
+					 </div>
+					 <div>
+						<span><label>Password</label></span>
+					    <span><input type="password" name="password"></span>
+					 </div>
+					<div class="sign">
+                    
+					 <tr><td>验证码：</td><td  colspan="2"><input type="text" name="string" value="区分大小写"
+                     onfocus="if (value =='区分大小写'){value =''}"onblur="if (value ==''){value='区分大小写'}"/></td>
+                     <td ><img src="checkcode.php" onclick="this.src='checkcode.php?id='+Math.random()"/></td></tr>
+						<div class="submit">
+						  <input type="submit" name="sub" value="LOGIN" >
+						</div>
+						<span class="forget-pass">
+                        
+							<a href="#">Forgot Password?</a>
+						</span>
+
+					</div>
+					</form>
+				</div>
+			</div>
+	
+		</div>
+		
+	 
+</body>
+
+
+</html>
